@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.App > div {
+  padding: 2em 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* landing styles (first section) */
+.landing { 
+  height: 100vh;
+  /* background-color: rgba(255, 0, 0, 0.096); */
+  background-image: url("/poster.png");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing  * , .feature * , .footer *{ 
+  border: 1px solid black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing .header { 
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+} 
+
+.description_container { 
+  height: 90%;
+  display: flex;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.description_container .description { 
+
+  height: 30em;
+  width: 30em;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* feature styles (second section) */
+
+.feature { 
+  background-color: rgb(87, 103, 87);
+}
+.feature > div { 
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feature .feature_header {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.feature .card_container { 
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+}
+
+.card { 
+  height: 20em;
+  background: red;
+  width: 13rem;
+  margin: 1em 0;
+}
+
+/* footer styles */
+footer {
+  height: 25vh;
+  background-color: indianred;
+}
+
+.footerTop, .footerMiddle, .footerDown{
+  margin: 0 auto;
+}
+
+.footerTop{
+  width:20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerMiddle{
+  width: 30%;
+  display:flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.footerDown{
+  width: 30%;
+  text-align: center;
+  color: #6B7280;
+  margin-top: 1em;
 }
